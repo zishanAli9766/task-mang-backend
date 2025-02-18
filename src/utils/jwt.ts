@@ -1,4 +1,4 @@
-import jwt, { SignOptions } from "jsonwebtoken";
+import jwt,{ SignOptions } from "jsonwebtoken";
 import { UserDocument } from "../models/user.model";
 import { config } from "../config/app.config";
 
@@ -15,8 +15,8 @@ const defaults: SignOptions = {
 };
 
 export const accessTokenSignOptions: SignOptsAndSecret = {
-  // expiresIn: config.JWT_EXPIRES_IN,
-  expiresIn: 86400,
+  //   expiresIn: 86400,
+  expiresIn: config.JWT_EXPIRES_IN,
   secret: config.JWT_SECRET,
 };
 

@@ -6,8 +6,8 @@ const appConfig = () => ({
   BASE_PATH: getEnv("BASE_PATH", "/api"),
   MONGO_URI: getEnv("MONGO_URI"),
 
-  JWT_SECRET: getEnv("jwt_secret_key"),
-  JWT_EXPIRES_IN: Number(getEnv("JWT_EXPIRES_IN", "86400")),
+  JWT_SECRET: getEnv("JWT_SECRET"),
+  JWT_EXPIRES_IN: Number(getEnv("JWT_EXPIRES_IN")),
 
   SESSION_SECRET: getEnv("session_secret_key", "fallback_secret"), // Fixed default value
   SESSION_EXPIRES_IN: getEnv("SESSION_EXPIRES_IN", "1d"), // Added a default for safety
