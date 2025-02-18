@@ -23,10 +23,10 @@ const appConfig = () => ({
     "http://localhost:8000/api/auth/google/callback"
   ),
 
-  FRONTEND_ORIGIN: getEnv("FRONTEND_ORIGIN", "http://localhost:5173"),
+  FRONTEND_ORIGIN: getEnv("FRONTEND_ORIGIN", "https://task-mang-rose.vercel.app"),
   FRONTEND_GOOGLE_CALLBACK_URL: getEnv(
     "FRONTEND_GOOGLE_CALLBACK_URL",
-    "http://localhost:5173/google/ouath/callback"
+    "https://task-mang-rose.vercel.app/google/ouath/callback"
   ),
 });
 
